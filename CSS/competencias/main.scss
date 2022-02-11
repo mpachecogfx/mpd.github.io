@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+    background: #FDFADB;
+    height: 100%;
+    margin: 0;
+    font-family: poppins;
+    width: 100%;
+
+    object{
+        pointer-events: none;
+    }
+}
+
+.escritorio{
+    display: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.nav-container{
+    background: black;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+    a {
+        color: white;
+    }
+}
+
+header{
+    display: block;
+    padding: 7% 0;
+
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+
+        ul{
+            display: flex;
+            margin: auto;
+
+            a{
+                display: block;
+                padding: 0 1.5em;
+                }
+        }
+
+            li{
+                font-size: 0.6em;
+                font-weight: bold;
+            }
+    }
+}
+
+.content{
+    padding: 2em;
+
+    .content-container{
+
+        margin: auto;
+
+            .hero-text{
+
+                margin-top: 2em;
+
+                .titulo{
+                    font-weight: 700;
+                    line-height: 22px;
+                    font-size: 1em;
+                }
+
+                .subtitulo{
+                    font-weight: 500;
+                    font-size: 0.85em;
+                }
+
+                .texto{
+                    margin-top: 3em;
+                    font-size: 0.8em;
+                }
+
+                .indico{
+                    display: none;
+                }
+            }
+        
+        .lista{
+            margin-top: 4em;
+            display: grid;
+
+            div{
+            margin-top: 3em;
+            display: flex;
+            background: #FFFAD1;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+
+                object{
+                    margin-left: 1em;
+                    width: 10%;
+                    margin-bottom: 1%;
+                }
+
+                .competencia{
+                    margin-left: 1em;
+                    margin-right: 1em;
+                    font-size: 0.85em;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.footer{
+    box-shadow: 0px 2px 2px rgba(0.25, 0.25, 0.25, 0.25);
+    margin-top: 45%;
+    background: black;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    vertical-align: middle;
+    
+        ul{
+            display: flex;
+            margin: auto;
+    
+            a{
+                display: block;
+                padding: 0 1.5em;
+                }
+
+            .whatsapp{
+                width: auto;
+                height: 25px;
+            }
+
+            .linkedin{
+                width: auto;
+                height: 25px;
+            }
+                
+            .mail{
+                    width: auto;
+                    height: 23px;
+                }
+            
+        }
+
+    }
+
+@media only screen and (min-width: 600px){
+
+    .nav-container{
+        padding-top: 0;
+        background: black;
+    
+        a {
+            color: white;
+        }
+    }
+    
+    header{
+        padding: 3%;
+
+        div{
+            width: 75%;
+            margin: auto;
+    
+            ul{
+                width: 100%;
+                justify-content: space-between;
+        
+                a{
+                    display: block;
+                    }
+                }
+        
+                li{
+                    font-size: 0.8em;
+                    font-weight: bold;
+                }
+
+        }
+    }
+
+    
+    .content{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 12%;
+        margin-right: 12%;
+    
+        .content-container{
+            margin: auto;
+
+            .lista{
+                margin-top: 2em;
+                display: grid;
+
+                div{
+                margin-top: 4em;
+                display: flex;
+                vertical-align: middle;
+
+                    object{
+                        position: relative;
+                        margin-bottom: 1%;
+                        margin-left: 1em;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        width: 40px;
+                        padding: 2%;
+                    }
+
+                    .competencia{
+                        position: relative;
+                        margin-left: 2em;
+                        margin-right: 1em;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        font-size: 0.85em;
+                    }
+                }
+            }
+        }
+    
+    }
+    
+    .footer{
+        margin-top: 25%;
+        background: black;
+        padding: 1em 0;
+        display: flex;
+        justify-content: space-between;
+        bottom: 0;
+        vertical-align: middle;
+        
+            ul{
+                display: flex;
+                margin: auto;
+        
+                a{
+                    display: block;
+                    padding: 0 1.5em;
+                    }
+    
+                .whatsapp{
+                    width: auto;
+                    height: 18px;
+                }
+    
+                .linkedin{
+                    width: auto;
+                    height: 18px;
+                }
+                    
+                .mail{
+                        width: auto;
+                        height: 18px;
+                    }
+                
+            }
+    
+        }
+
+}
+
+
+@media only screen and (min-width: 1000px){
+
+    .nav-container{
+        padding-top: 0;
+        background: black;
+    
+        a {
+            color: white;
+        }
+    }
+    
+    header{
+        padding: 2%;
+
+        div{
+            width: 60%;
+            margin: auto;
+    
+            ul{
+                width: 100%;
+                justify-content: space-between;
+        
+                a{
+                    display: block;
+                    }
+                }
+        
+                li{
+                    font-size: 0.8em;
+                    font-weight: bold;
+                }
+
+                .margen{
+                    margin-left: 5%;
+                }
+        }
+    }
+
+    
+    .content{
+        padding-top: 0;
+        padding-bottom: 5%;
+        margin-left: 12%;
+        margin-right: 12%;
+    
+        .content-container{
+            margin: auto;
+
+            .lista{
+                width: 85%;
+                margin: auto;
+                margin-top: 1em;
+
+                div{
+                    width: 65%;
+                    margin-top: 10%;
+
+                    object{
+                        width: 50px;
+                    }
+
+                    .competencia{
+                        font-size: 0.9vw;
+                    }
+                }
+
+                .izda{
+                    margin-right: auto;
+                }
+
+                .dcha{
+                    margin-left: auto;
+                }
+            }
+        }
+    
+    }
+    
+    .footer{
+        margin-top: 8%;
+        background: black;
+        padding: 1em 0;
+        display: flex;
+        justify-content: space-between;
+        bottom: 0;
+        vertical-align: middle;
+        
+            ul{
+                display: flex;
+                margin: auto;
+        
+                a{
+                    display: block;
+                    padding: 0 1.5em;
+                    }
+    
+                .whatsapp{
+                    width: auto;
+                    height: 18px;
+                }
+    
+                .linkedin{
+                    width: auto;
+                    height: 18px;
+                }
+                    
+                .mail{
+                        width: auto;
+                        height: 18px;
+                    }
+                
+            }
+    
+        }
+
+}
