@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+body {
+  height: 100%;
+  margin: 0;
+  font-family: poppins;
+  width: 100%;
+}
+
+body object {
+  pointer-events: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: black;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: block;
+  padding: 7% 0;
+}
+
+header div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+header div ul a {
+  display: block;
+  padding: 0 1.5em;
+}
+
+header div li {
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+.hero-container {
+  display: -ms-grid;
+  display: grid;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(57%, black), color-stop(43%, white));
+  background: linear-gradient(to bottom, black 57%, white 43%);
+}
+
+.hero-container .nombre {
+  margin-top: 10%;
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: 500;
+  padding: 1.5em;
+  letter-spacing: 0.02em;
+}
+
+.hero-container .foto {
+  text-align: center;
+  margin: auto;
+  height: auto;
+  width: 30%;
+  max-width: 130px;
+}
+
+.hero-container .subtitulo {
+  margin-top: 8%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+  padding: 0.8em;
+  letter-spacing: 0.02em;
+}
+
+.content {
+  max-width: 400px;
+  margin: auto;
+  padding: 2em;
+}
+
+.content .content-container .presentacion {
+  text-align: center;
+  font-size: 11px;
+  line-height: 30px;
+}
+
+.content .content-container .content-design {
+  display: none;
+}
+
+.footer {
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-top: 25%;
+  background: black;
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: 0;
+  vertical-align: middle;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.footer ul a {
+  display: block;
+  padding: 0 1.5em;
+}
+
+.footer ul .whatsapp {
+  width: auto;
+  height: 25px;
+}
+
+.footer ul .linkedin {
+  width: auto;
+  height: 25px;
+}
+
+.footer ul .mail {
+  width: auto;
+  height: 23px;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav-container {
+    padding-top: 0;
+    background: black;
+  }
+  .nav-container a {
+    color: white;
+  }
+  header {
+    padding: 3%;
+  }
+  header div {
+    width: 75%;
+    margin: auto;
+  }
+  header div ul {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header div ul a {
+    display: block;
+  }
+  header div li {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .hero-container .nombre {
+    margin-top: 6%;
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 500;
+    padding: 1.5em;
+    letter-spacing: 0.02em;
+  }
+  .hero-container .foto {
+    margin: auto;
+    height: auto;
+    width: 15%;
+  }
+  .hero-container .subtitulo {
+    margin-top: 2%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 0.8em;
+    letter-spacing: 0.02em;
+  }
+  .content {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 100%;
+  }
+  .content .content-container {
+    margin: auto;
+    max-width: 700px;
+    display: -ms-grid;
+    display: grid;
+  }
+  .content .content-container .presentacion {
+    margin-left: 2em;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 0.7em;
+    line-height: 3em;
+  }
+  .footer {
+    margin-top: 25%;
+    background: black;
+    padding: 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    bottom: 0;
+    vertical-align: middle;
+  }
+  .footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .footer ul a {
+    display: block;
+    padding: 0 1.5em;
+  }
+  .footer ul .whatsapp {
+    width: auto;
+    height: 18px;
+  }
+  .footer ul .linkedin {
+    width: auto;
+    height: 18px;
+  }
+  .footer ul .mail {
+    width: auto;
+    height: 18px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .content {
+    margin-top: 4%;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 100%;
+  }
+  .content .content-container {
+    margin: auto;
+    max-width: 700px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% auto;
+        grid-template-columns: 45% auto;
+  }
+  .content .content-container .presentacion {
+    margin-left: 2em;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    text-align: left;
+    font-size: 0.7em;
+    line-height: 3em;
+  }
+  .content .content-container .content-design {
+    display: block;
+    margin-left: 4em;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav-container {
+    padding-top: 0;
+    background: black;
+  }
+  .nav-container a {
+    color: white;
+  }
+  header {
+    padding: 2%;
+  }
+  header div {
+    width: 60%;
+    margin: auto;
+  }
+  header div ul {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header div ul a {
+    display: block;
+  }
+  header div li {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  header div .margen {
+    margin-left: 5%;
+  }
+  .hero-container .nombre {
+    margin-top: 3%;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 500;
+    padding: 1.5em;
+    letter-spacing: 0.02em;
+  }
+  .hero-container .foto {
+    margin: auto;
+    height: auto;
+    width: 15%;
+  }
+  .hero-container .subtitulo {
+    margin-top: 1%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 0.8em;
+    letter-spacing: 0.02em;
+  }
+  .content {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 100%;
+  }
+  .content .content-container {
+    margin: auto;
+    max-width: 1100px;
+    display: -ms-grid;
+    display: grid;
+  }
+  .content .content-container .presentacion {
+    margin-left: 2em;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    text-align: left;
+    font-size: 0.9em;
+    line-height: 2.7em;
+  }
+  .footer {
+    margin-top: 8%;
+    background: black;
+    padding: 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    bottom: 0;
+    vertical-align: middle;
+  }
+  .footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .footer ul a {
+    display: block;
+    padding: 0 1.5em;
+  }
+  .footer ul .whatsapp {
+    width: auto;
+    height: 18px;
+  }
+  .footer ul .linkedin {
+    width: auto;
+    height: 18px;
+  }
+  .footer ul .mail {
+    width: auto;
+    height: 18px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
